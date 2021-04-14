@@ -1,0 +1,3 @@
+# carousel
+swiper等のライブラリを使わないカルーセル
+velocity用とanimejs用を用意
