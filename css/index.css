@@ -1,0 +1,203 @@
+/**
+* YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+* http://cssreset.com
+* Copyright 2012 Yahoo! Inc. All rights reserved.
+* http://yuilibrary.com/license/
+*/
+/*
+TODO will need to remove settings on HTML since we can't namespace it.
+TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #fff;
+}
+
+/*
+TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+TODO test putting a class on HEAD.
+- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+body {
+  background: #fff;
+}
+
+.carousel {
+  overflow: hidden;
+  padding-top: 40%;
+}
+
+.carousel .carousel__wrapper {
+  margin: 0 auto;
+}
+
+.carousel .carousel__wrapper .carousel__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 6.66667vw;
+}
+
+.carousel .carousel__wrapper .carousel__list li {
+  width: 74.66667vw;
+  height: 97.33333vw;
+  background: #bbb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 22.13333vw 8vw 0;
+  margin: 0 0 0 6vw;
+}
+
+.carousel .carousel__wrapper .carousel__list li img {
+  width: 58.66667vw;
+  height: 26.66667vw;
+}
+
+.carousel .dots {
+  margin: 5.33333vw auto 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel .dots li {
+  width: 2.66667vw;
+  height: 2.66667vw;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0 0 2.66667vw;
+}
+
+.carousel .dots li.is-active {
+  background: black;
+}

@@ -1,0 +1,45 @@
+@import './reset';
+
+.carousel {
+  overflow: hidden;
+  padding-top: 300/750 * 100%;
+  .carousel__wrapper {
+    margin: 0 auto;
+    .carousel__list {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 50/750*100vw;
+      li{
+        width:560/750*100vw;
+        height: 730/750*100vw;
+        background: #bbb;
+        box-sizing: border-box;
+        padding: 166/750*100vw 60/750*100vw 0;
+        margin: 0 0 0 45/750*100vw;
+        img{
+          width: 440/750*100vw;
+          height: 200/750*100vw;
+        }
+      }
+    }
+  }
+
+  .dots{
+    margin:40/750*100vw auto 0;
+    position: relative;
+    display: flex;
+      justify-content: center;
+      li{
+        width: 20/750*100vw;
+        height: 20/750*100vw;
+        background: rgba(0,0,0,0.4);
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 0 0 20/750*100vw;
+
+        &.is-active{
+          background: rgb(0, 0, 0);
+        }
+      }
+  }
+}
